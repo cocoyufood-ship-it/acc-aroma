@@ -1,61 +1,11 @@
+# ACC 精油能量三牌指引
 
-<!doctype html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#152820" />
-  <title>ACC 精油能量三牌指引</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="回到首頁"><span class="brand-mark">A</span><span>ACC Aroma Cards</span></a>
-    <span class="quiet-badge">三牌能量指引</span>
-  </header>
+這是一個免安裝、可直接在瀏覽器開啟的小型牌卡應用程式。
 
-  <main id="top">
-    <section class="hero" id="intro">
-      <p class="eyebrow">A MOMENT WITH YOUR INNER SELF</p>
-      <h1>讓香氣，說出你此刻<br /><em>需要聽見的話</em></h1>
-      <p class="lead">靜下來想著你此刻最在意的事，抽取三張精油人格牌卡，讀見狀態、困擾與下一步。</p>
-      <div class="spread-preview" aria-label="三張牌位說明">
-        <div><b>01</b><span>此刻的你</span><small>個人狀態</small></div>
-        <i></i><div><b>02</b><span>內在課題</span><small>困擾與問題</small></div>
-        <i></i><div><b>03</b><span>前行之光</span><small>方向與指引</small></div>
-      </div>
-      <button class="primary" id="beginBtn">開始抽牌 <span>→</span></button>
-      <p class="microcopy">約 2 分鐘 · 無須登入 · 每次隨機抽取</p>
-    </section>
+## 使用方式
 
-    <section class="ritual hidden" id="ritual" aria-labelledby="ritualTitle">
-      <p class="eyebrow">YOUR THREE-CARD READING</p>
-      <h2 id="ritualTitle">先為自己留一個呼吸的空間</h2>
-      <p>閉上眼睛，緩慢深呼吸三次。心中默念：「我願意看見此刻最需要知道的訊息。」</p>
-      <div class="breath" aria-hidden="true"><span>吸氣</span></div>
-      <button class="primary" id="drawBtn">我準備好了，抽取三張牌</button>
-    </section>
+1. 雙擊 `index.html`。
+2. 點選「開始抽牌」，完成呼吸引導後抽取三張不重複牌卡。
+3. 依序閱讀「個人狀態」、「困擾與問題」、「方向與指引」，並可複製結果。
 
-    <section class="reading hidden" id="reading" aria-live="polite">
-      <div class="reading-head">
-        <div><p class="eyebrow">YOUR READING</p><h2>你此刻的三道能量訊息</h2></div>
-        <button class="text-btn" id="restartBtn">↻ 重新抽牌</button>
-      </div>
-      <div class="cards" id="cards"></div>
-      <article class="synthesis" id="synthesis"></article>
-      <div class="actions">
-        <button class="secondary" id="copyBtn">複製本次指引</button>
-        <button class="primary" id="againBtn">再抽一次</button>
-      </div>
-      <p class="disclaimer">此牌卡為自我覺察與靈感探索工具，不取代醫療、心理諮商或其他專業建議。精油使用前請依產品標示並諮詢合格專業人員。</p>
-    </section>
-  </main>
-
-  <footer><span>ACC 精油人格牌卡</span><span>Listen inward · Move gently</span></footer>
-  <script src="app.js"></script>
-</body>
-</html>
+目前已完整串接 ACC001–ACC027 共 27 張牌面圖片與牌義資料；每次抽取三張不重複牌卡，分別對應個人狀態、困擾與問題、方向與指引。
